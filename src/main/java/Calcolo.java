@@ -23,19 +23,17 @@ public class Calcolo
         System.out.println(contenitore.get(i).toString());
     }
     
-    public String Stampa()
+    public SommaNumeri getElemento(int i)
     {
-        int i = 0;
-        String s = "";
-        
-        for(i = 0; i < contenitore.size(); i++)
-            s += contenitore.get(i).toString();
-        
-        System.out.println(s);
-        return s;
+        return contenitore.get(i);
     }
     
-    public void Scrivi() throws IOException
+    public int getSize()
+    {
+        return contenitore.size();
+    }
+    
+    public void Scrivi(String s) throws IOException
     {
         FileWriter w;
         BufferedWriter b;
@@ -43,7 +41,7 @@ public class Calcolo
         w = new FileWriter("scrittura.txt");
         b = new BufferedWriter(w);
 
-        b.write(Stampa());
+        b.write(s);
         b.flush();
         b.close();
         

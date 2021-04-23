@@ -1,0 +1,25 @@
+Dati:
+  Inizio Conteggio: 12
+ Fine Conteggio: 45
+Valore Calcolato: 969
+
+Dati:
+  Inizio Conteggio: 11
+ Fine Conteggio: 56
+Valore Calcolato: 1541
+
+Dati:
+  Inizio Conteggio: 235
+ Fine Conteggio: 333
+Valore Calcolato: 28116
+
+Dati:
+  Inizio Conteggio: 1
+ Fine Conteggio: 12
+Valore Calcolato: 78
+
+Dati:
+  Inizio Conteggio: 1
+ Fine Conteggio: 100
+Valore Calcolato: 5050
+

@@ -21,6 +21,7 @@ public class Grafica extends JFrame implements ActionListener
     private JLabel fC = new JLabel("Inserire Fine Conteggio:");
     private JButton calcolo = new JButton("Somma");
     private JButton stampa = new JButton("Stampa Su File");
+     Calcolo ca = new Calcolo();
     
     
     public Grafica()
@@ -58,6 +59,18 @@ public class Grafica extends JFrame implements ActionListener
         stampa.addActionListener(this);
     }
     
+     public String Stampa()
+    {
+        int i = 0;
+        String s = "";
+        
+        for(i = 0; i < ca.getSize(); i++)
+            s += ca.getElemento(i).toString();
+        
+        System.out.println(s);
+        return s;
+    }
+    
     @Override
     public void actionPerformed(ActionEvent e)
     {
@@ -66,7 +79,6 @@ public class Grafica extends JFrame implements ActionListener
         String evento = e.getActionCommand();
         String letturaInizio = "";
         String letturaFine = "";
-        Calcolo ca = new Calcolo();
         
         switch(evento)
         {
@@ -84,9 +96,10 @@ public class Grafica extends JFrame implements ActionListener
                 
             case "Stampa Su File":
             {
+                Calcolo p = new Calcolo();
                 try 
                 {
-                    ca.Scrivi();
+                    p.Scrivi(Stampa());
                 } catch (IOException ex) 
                 {
                     Logger.getLogger(Grafica.class.getName()).log(Level.SEVERE, null, ex);
