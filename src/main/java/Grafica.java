@@ -89,6 +89,7 @@ public class Grafica extends JFrame implements ActionListener
                 y = Integer.valueOf(letturaFine);
                 
                 SommaNumeri input = new SommaNumeri(x, y);
+                
                 ca.SommaNumeri(input);
                 inizioConteggio.setText("");
                 fineConteggio.setText("");

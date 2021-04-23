@@ -20,6 +20,7 @@ public class Calcolo
         
         x.setValore((int) somma);
         contenitore.add(x);
+        
         System.out.println(contenitore.get(i).toString());
     }
     
